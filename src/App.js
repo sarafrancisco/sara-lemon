@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './Components/Nav';
 import Header from './Components/Header';
-import Main from './Components/Main';
+import Highlights from './Components/Highlights';
 import Testimonials from './Components/Testimonials';
 import About from './Components/About';
 import Footer from './Components/Footer';
@@ -12,9 +12,9 @@ function App() {
     <div>
      <Nav/>
      <Header/>
-     <Main/>
-     <Testimonials/>
+     <Highlights/>
      <About/>
+     <Testimonials/>
      <Footer/>
     </div>
   );
