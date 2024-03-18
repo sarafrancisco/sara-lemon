@@ -5,6 +5,7 @@ body{
 
 li{
   list-style: none;
+  font-size: 20px;
 }
 
 a{
@@ -23,29 +24,37 @@ nav{
   align-items: center;
 }
 
+.navbar img{
+  width: 200px;
+}
+
 nav ul li {
   display: inline-block;
   padding: 1em;
 }
 
 nav ul li a{
-  color: #000;
+  color: #495E57;
 }
 
 nav ul li a:hover{
-  text-decoration: underline solid #495E57;
-}
+  font-weight: bold;
+  }
 
 .menu-icon {
   display: none;
   cursor: pointer;
 }
 
+.menu-icon img{
+  width: 50px;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
   align-items: center;
-  color: black;
+  color: #495E57;
 }
 
 .nav-links.visible {
@@ -106,7 +115,7 @@ button {
 .banner-img{
   position: absolute;
   right: 13%;
-  top: 15%;
+  top: 25%;
   width: 400px;
 }
 
@@ -120,7 +129,6 @@ button {
 /* Highlights / Specials */
 
 .menu-container{
-  margin: 110px auto;
   padding: 10px 13%;
 }
 
@@ -174,25 +182,25 @@ button {
 
 .about section{
   display: flex;
-  padding: 10px 13%;
+  padding: 5px 13%;
   position: relative;
   align-items: center;
-}
+  }
 
 .history {
   max-width: 500px;
   line-height: 1.5;
-  margin-bottom: 30px;
   vertical-align: top;
-}
+  color: #495E57;
+  }
 
 h2 {
-
   font-size: 40px;
+  padding-bottom: auto;
+  color: #000;
 }
 
 h6 {
-  color: #495E57;
   font-size: 18px;
   margin: 20px;
 }
@@ -210,13 +218,51 @@ h6 {
 
 /*Testimonials*/
 
+.testimonials {
+  background-color: #495e57;
+  margin: auto;
+  padding: 20px 13%;
+  color: white;
+  line-height: 1;
+  }
+
+.testimonials-header{
+  line-height: 50%;
+  }
+
+.testimonials-header h6 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.reviews {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+}
+
+.testimonials img{
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.person {
+  align-content: center;
+  width: 250px;
+  background: #EDEFEE;
+  border-radius: 8px;
+  color: #333333
+}
+
 /*Footer*/
 
 footer section{
   padding: 10px 13%;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items:flex-start;
   flex-wrap: wrap;
   gap: 2rem 1rem;
 }
@@ -240,6 +286,7 @@ footer img{
 
 footer ul li{
   padding: 4px 0;
+  font-size: 18px;
 }
 
 
