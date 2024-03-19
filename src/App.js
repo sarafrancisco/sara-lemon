@@ -1,14 +1,16 @@
 import React from 'react';
 import Nav from './Components/Nav';
-import Main from './Components/Main';
 import Footer from './Components/Footer';
 import './App.css';
+import Booking from './Components/Booking';
+import Header from './Components/Header';
 
 function App() {
   return (
     <div>
      <Nav/>
-     <Main/>
+     <Header/>
+     <Booking/>
      <Footer/>
     </div>
   );
