@@ -71,14 +71,14 @@ nav ul li a:hover{
 }
 
 
-/* header section */
+/* hero section */
 
-.header {
+.hero {
   background-color: #495e57;
   padding: 40px 0;
 }
 
-.header section {
+.hero section {
 color: #EDEFEE;
 padding: 10px 13%;
 position: relative;

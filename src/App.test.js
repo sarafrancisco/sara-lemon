@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import BookingForm from './Components/BookingForm';
 import { BrowserRouter } from 'react-router-dom';
+import userEvent from '@testing-library/user-event';
 
 test('renders the BookingForm heading', () => {
   render(<BrowserRouter><BookingForm /></BrowserRouter>);
@@ -20,7 +21,7 @@ test('Initialize/Update Times', () => {
   fireEvent.click(reserveButton);
 
     const testTime = []
-    // userEvent.selectOptions(screen.getByLabelText("time"),screen.getByRole('option', { name: testTime}))
+    //userEvent.selectOptions(screen.getByLabelText("time"),screen.getByRole('option', { name: testTime}))
     // expect(screen.getByRole('option', { name: testTime}).selected).toBe(true);
 
 })
