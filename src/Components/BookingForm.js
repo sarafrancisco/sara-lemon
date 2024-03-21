@@ -13,6 +13,17 @@ export default function BookingForm(props) {
     })
 
     const [numOfGuests, setNumOfGuests] = useState(1);
+    const handleIncrementGuests = () => {
+        if (numOfGuests < 10) {
+            setNumOfGuests (numOfGuests + 1);
+        }
+    };
+    const handleDecrementGuests = () => {
+        if (numOfGuests >1) {
+            setNumOfGuests (numOfGuests - 1);
+        }
+    };
+
 
     //todays date;
     var today = new Date();
@@ -118,9 +129,9 @@ export default function BookingForm(props) {
                 <div className='num-of-guests'>
                         <label>Number of Guests:</label>
                         <div className='num'>
-                            <span onClick={() => numOfGuests>1 ? setNumOfGuests(numOfGuests - 1): null}>-</span>
-                            <h5>1</h5>
-                            <span onClick={() => numOfGuests<10 ? setNumOfGuests(numOfGuests + 1): null}>+</span>
+                            <span onClick={handleDecrementGuests}>-</span>
+                            <h5>{numOfGuests}</h5>
+                            <span onClick={handleIncrementGuests}>+</span>
                         </div>
                     </div>
                 <textarea

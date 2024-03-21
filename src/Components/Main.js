@@ -36,7 +36,7 @@ export default function Main() {
     const navigate = useNavigate();
     function submitForm(formData) {
         if (submitAPI(formData)) {
-            navigate("/confirmedbooking");
+            navigate("/ConfirmedBooking");
         }
     }
 
@@ -51,8 +51,8 @@ export default function Main() {
     <main>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/reservation" element={<Booking availableTimes={state.availableTimes} dispatch={dispatch} submitForm={submitForm}/>}/>
-            <Route path="/confirmedbooking" element={<ConfirmedBooking/>}/>
+            <Route path="/Booking" element={<Booking availableTimes={state.availableTimes} dispatch={dispatch} submitForm={submitForm}/>}/>
+            <Route path="/ConfirmedBooking" element={<ConfirmedBooking/>}/>
         </Routes>
     </main>
   )

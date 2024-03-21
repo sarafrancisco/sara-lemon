@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import logo from '../Images/Logo .svg'
-import hamburguer from '../Images/icon _hamburger.svg'
+import logo from '../Images/Logo .svg';
+import hamburguer from '../Images/icon _hamburger.svg';
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     const [menuOpen, setMenuOpen] = useState (false)
@@ -9,21 +10,25 @@ const Nav = () => {
         setMenuOpen (!menuOpen);
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
-            <a href="/" className="logo">
+            <Link to="/" className="logo">
              <img src={logo} alt="Little Lemon logo"/>
-            </a>
-            <a href="/" className="menu-icon" onClick={toggleMenu}>
+            </Link>
+            <div className="menu-icon" onClick={toggleMenu}>
               <img src={hamburguer} alt="Menu icon"/>
-            </a>
+            </div>
             <ul className={`nav-links ${menuOpen ? "visible": ""}`}>
-                <li><a href='/'>Home</a></li>
-                <li><a href='/'>About</a></li>
-                <li><a href='/'>Menu</a></li>
-                <li><a href='/Booking'>Reservations</a></li>
-                <li><a href='/'>Order Online</a></li>
-                 <li><a href='/'>Login</a></li>
+                <li><Link to='/' onClick={closeMenu}>Home</Link></li>
+                <li><Link to='/' onClick={closeMenu}>About</Link></li>
+                <li><Link to='/' onClick={closeMenu}>Menu</Link></li>
+                <li><Link to='/Booking' onClick={closeMenu}>Reservations</Link></li>
+                <li><Link to='/' onClick={closeMenu}>Order Online</Link></li>
+                 <li><Link to='/' onClick={closeMenu}>Login</Link></li>
             </ul>
         </nav>
     );

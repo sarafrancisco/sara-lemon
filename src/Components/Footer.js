@@ -10,12 +10,12 @@ import restaurant from '../Images/restaurant.jpg'
                 <div className='doormat_navigation'>
                     <h4>Important Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="index.html">Menu</a></li>
-                        <li><a href="index.html">Reservations</a></li>
-                        <li><a href="index.html">Order Online</a></li>
-                        <li><a href="index.html">Login</a></li>
+                        <li><a href='/'>Home</a></li>
+                        <li><a href='/'>About</a></li>
+                        <li><a href='/'>Menu</a></li>
+                        <li><a href='/Booking'>Reservations</a></li>
+                        <li><a href='/'>Order Online</a></li>
+                        <li><a href='/'>Login</a></li>
                     </ul>
                 </div>
                 <div className='social_media'>
