@@ -4,7 +4,7 @@ import bannerImg from '../Images/restauranfood.jpg';
  export default function Hero () {
    return (
       <header className='hero'>
-        <section>
+        <section className='hero-container'>
           <div className='banner'>
             <h1>Little Lemon</h1>
             <h2>Chicago</h2>

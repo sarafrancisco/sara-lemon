@@ -28,7 +28,7 @@ const Nav = () => {
                 <li><Link to='/' onClick={closeMenu}>Menu</Link></li>
                 <li><Link to='/Booking' onClick={closeMenu}>Reservations</Link></li>
                 <li><Link to='/' onClick={closeMenu}>Order Online</Link></li>
-                 <li><Link to='/' onClick={closeMenu}>Login</Link></li>
+                <li><Link to='/' onClick={closeMenu}>Login</Link></li>
             </ul>
         </nav>
     );

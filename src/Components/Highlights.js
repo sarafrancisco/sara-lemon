@@ -7,7 +7,7 @@ import recipes from "./recipes";
    <div className="menu-container">
     <div className="menu-header">
       <h2>This weeks specials!</h2>
-      <button>Online Menu</button>
+      <button className='online-menu'>Online Menu</button>
     </div>
     <section className='cards'>
      {recipes.map((recipe) => (
@@ -15,10 +15,10 @@ import recipes from "./recipes";
             <img src={recipe.image} alt="" />
             <div className="menu-content">
               <div className="heading">
-                <h5>{recipe.title}</h5>
-                <p>${recipe.price}</p>
+                <h5 className='menu-title'>{recipe.title}</h5>
+                <p className='menu-price'>${recipe.price}</p>
               </div>
-              <p>{recipe.description}</p>
+              <p className='description'>{recipe.description}</p>
               <button className="orderbtn">Order Now</button>
             </div>
           </article>

@@ -133,7 +133,7 @@ export default function BookingForm(props) {
                             <h5>{numOfGuests}</h5>
                             <span onClick={handleIncrementGuests}>+</span>
                         </div>
-                    </div>
+                </div>
                 <textarea
                         cols={30}
                         rows={10}
